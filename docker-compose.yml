@@ -6,12 +6,12 @@ services:
         ports:
             - "4306:3306"
         volumes:
-            - ../../../mysql/folder:/var/lib/mysql
+            - ../../../mysql/acod:/var/lib/mysql
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: password
-            MYSQL_DATABASE: db
-            MYSQL_USER: user
+            MYSQL_DATABASE: acod
+            MYSQL_USER: uhorn
             MYSQL_PASSWORD: password
 
     wordpress:
@@ -26,8 +26,8 @@ services:
         restart: always
         environment:
             WORDPRESS_DB_HOST: mysql
-            WORDPRESS_DB_USER: user
+            WORDPRESS_DB_USER: uhorn
             WORDPRESS_DB_PASSWORD: password
-            WORDPRESS_DB_NAME: db
+            WORDPRESS_DB_NAME: acod
 volumes:
     mysql: {}

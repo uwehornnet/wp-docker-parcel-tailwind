@@ -13,7 +13,7 @@
     />
     
     
-    <link rel="stylesheet" type="text/css" href="<?= bloginfo('template_url') ?>/public/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= bloginfo('template_url') ?>/public/css/styles.css">
 </head>
 <body>
 
