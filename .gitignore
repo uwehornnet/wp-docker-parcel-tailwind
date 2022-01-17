@@ -1,0 +1,7 @@
+node_modules
+.src
+.cache
+.DS_Store
+yarn.lock
+.parcel-cache
+public
